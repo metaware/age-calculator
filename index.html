@@ -5,6 +5,7 @@
   <title>Age Calculator</title>
   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/datepicker.css">
   <!-- Loading Flat UI -->
   <!-- <link href="css/flat-ui.css" rel="stylesheet"> -->
@@ -14,38 +15,32 @@
 </head>
 <body>
 
-  <script type="text/x-handlebars">
-    {{outlet}}
-  </script>
+  <div class="row fadeInLeft animated">
+    <div class="large-12 columns">
+      <div class="twelve columns">
+        <div id="age_calculator">
+          <h1>I was born on</h1>
+          <input type="text" id="age_on" placeholder="?">
+          <br/>
+          <h1>which makes me</h1>
+          <input type="text" id="makes_me" placeholder="?" disabled>
+          <h1>years old today.</h1>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <h1>I would be</h1> 
+          <input type="text" id="would_be" placeholder="?"> 
+          <h1>years old on </h1> 
+          <br/>
+          <input type="text" id="this_date" placeholder="?" disabled>
+          <h1>date</h1>
 
-  <script type="text/x-handlebars" data-template-name="index">
-    <div class="row fadeInLeft animated">
-      <div class="large-12 columns">
-        <div class="twelve columns">
-          <div id="age_calculator">
-            <h1>I was born on</h1>
-            <input type="text" id="age_on" placeholder="?">
-            <br/>
-            <h1>which makes me</h1>
-            <input type="text" id="makes_me" placeholder="?">
-            <h1>years old today.</h1>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <h1>I would be</h1> 
-            <input type="text" id="would_be" placeholder="?"> 
-            <h1>years old on </h1> 
-            <br/>
-            <input type="text" id="this_date" placeholder="?">
-            <h1>date</h1>
-
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>

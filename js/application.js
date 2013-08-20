@@ -18,7 +18,10 @@ $(document).ready(function() {
 
   $("input#would_be").change(function(){
     yearsOld = $(this).val();
-    $("#this_date").datepicker('setValue', getYearsOldOn($('#age_on').val(), yearsOld));
+    var date = getYearsOldOn($('#age_on').val(), yearsOld);
+    if(date){
+      $("#this_date").datepicker('setValue', date);
+    }
   });
 });
 
@@ -27,9 +30,15 @@ function calcAge(birthday) {
 }
 
 function getYearsOldOn(birthdayString, yearsOld){
-  var birthday = new Date(birthdayString);
-  birthday.setYear(birthday.getYear() + yearsOld);
-  return birthday;
+  if(birthdayString){
+    var birthday = new Date(birthdayString);
+    birthday.setYear(parseInt(birthday.getFullYear()) + parseInt(yearsOld));
+    return birthday;
+  }
+  else{
+    alert("Please select birthdate to calculate!");
+    return false;
+  }
 }
 
 
