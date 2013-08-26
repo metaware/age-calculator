@@ -1,0 +1,129 @@
+body{
+  margin: 20px 0px;
+  background: url("../images/cream_pixels.png") repeat scroll 0 0 transparent;
+}
+
+
+*{
+  font-family: "Lato", "serif";
+  font-weight: 300;
+}
+
+.logo {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom:20px;
+}
+
+.logo h1{
+  font-size: 20px;
+}
+
+.logo img{
+  margin-top:-10px;
+}
+
+.row{
+  width:90%;
+  margin:auto;
+}
+
+#age_calculator #age_on, #makes_me, #this_date, #would_be {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: inherit;
+    border-color: -moz-use-text-color;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    box-shadow: none;
+    font-size: 40px;
+    font-weight: 300;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 45%;
+}
+
+.row #age_calculator input{
+  color:#1ABC9C;
+}
+input#makes_me, input#would_be{
+  width:200px
+}
+
+#age_calculator h1{
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato","Helvetica",Helvetica,Arial,sans-serif;
+
+}
+
+#age_calculator{
+  text-align: center;
+}
+
+#age_calculator h1{
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  } 100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+  
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+  
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
