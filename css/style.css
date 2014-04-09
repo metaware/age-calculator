@@ -50,6 +50,10 @@ body{
     width: 45%;
 }
 
+#age_calculator input {
+  font-size: 2.1em;
+}
+
 .row #age_calculator input{
   color:#1ABC9C;
 }
